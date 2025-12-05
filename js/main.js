@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     header.addEventListener("click", () => {
       const isOpen = box.classList.contains("box--open");
-
-      // Close all other boxes
       boxes.forEach((otherBox) => {
         if (otherBox !== box) {
           otherBox.classList.remove("box--open");
@@ -18,14 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       if (!isOpen) {
-        // OPEN BOX
         box.classList.add("box--open");
-
-        // calculate auto height
         const fullHeight = content.scrollHeight + "px";
         content.style.maxHeight = fullHeight;
       } else {
-        // CLOSE BOX
         box.classList.remove("box--open");
         content.style.maxHeight = "0px";
       }

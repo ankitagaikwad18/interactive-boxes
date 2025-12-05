@@ -1,18 +1,15 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BACKGROUND */
 body {
   background: #f5f6fa;
   font-family: Arial, sans-serif;
   padding: 40px;
 }
 
-/* MAIN WRAPPER */
 .container {
   width: 90%;
   max-width: 600px;
@@ -22,7 +19,6 @@ body {
   gap: 20px;
 }
 
-/* BOX */
 .box {
   background: white;
   border-radius: 12px;
@@ -32,34 +28,29 @@ body {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* OPEN BOX POP EFFECT */
 .box.box--open {
   transform: scale(1.03);
   box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
   border-color: #bbb;
 }
 
-/* HEADER */
 .box__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* + icon */
 .box__toggle {
   font-size: 24px;
   font-weight: bold;
   transition: transform 0.3s ease;
 }
 
-/* Rotate when open */
 .box.box--open .box__toggle {
   transform: rotate(45deg);
   color: #007bff;
 }
 
-/* CONTENT BOX HIDE INITIALLY */
 .box__content {
   overflow: hidden;
   max-height: 0;
@@ -67,12 +58,10 @@ body {
   margin-top: 0px;
 }
 
-/* CONTENT VISIBLE WHEN OPEN */
 .box.box--open .box__content {
   margin-top: 15px;
 }
 
-/* OPTIONS STYLE */
 .options {
   display: flex;
   align-items: center;
@@ -80,7 +69,6 @@ body {
   margin: 8px 0 20px 0;
 }
 
-/* COLORS */
 .color {
   width: 22px;
   height: 22px;
@@ -98,7 +86,6 @@ body {
   background: green;
 }
 
-/* SIZE BUTTONS */
 .size {
   padding: 6px 14px;
   border: 1px solid #888;
